@@ -13,7 +13,7 @@ class Magazyn:
             self.lista_produktow.append(self.nazwa_produktu)
         print(f'Produkt {self.nazwa_produktu} został wprowadzony do magazynu')
 
-    def unun_produkt(self):
+    def usun_produkt(self):
         self.nazwa_produktu = input('Podaj nazwę produktu który chcesz usunąć: >>> ')
         if self.nazwa_produktu in self.lista_produktow:
             self.lista_produktow.remove(self.nazwa_produktu)
@@ -33,7 +33,7 @@ while True:
     if(wybor_uzytkownia == 2):
         magazyn.dodaj_produkt()
     if(wybor_uzytkownia == 3):
-        magazyn.unun_produkt()
+        magazyn.usun_produkt()
     if(wybor_uzytkownia == 4):
         break
         
